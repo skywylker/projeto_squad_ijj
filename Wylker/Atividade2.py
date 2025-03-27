@@ -14,3 +14,5 @@ print(f"Olá {nome_cliente}. Em {mes}, você fez compras no valor de R$ {valor_c
 
 
 # Perguntar sobre codificação UTF-8 e saída de texto com caracteres especiais.
+# Perguntar sobre nome das variáveis em primeira letra maiuscula
+# Perguntar sobre boas práticas em Pull-Request
