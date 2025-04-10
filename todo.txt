@@ -1,0 +1,27 @@
+A dona de um petshop quer criar um programa para calcular a idade dos cachorros
+de seus clientes em "anos de cachorro". Como os pets envelhecem de maneira diferente
+dos humanos - cada ano humano representa 7 anos de cachorros.
+
+>> Desafio: Crie um programa em Py que calcule a idade de cachorro com base na idade humana
+
+O que o programa deve conter:
+- Solicitar ao usuário a idade do pet, em número inteiro.
+- Calcular a idade do pet levando em consideração a idade humana
+
+# Importar a biblioteca time para usar a função sleep
+# time.sleep(2) Aguarda 2 segundos antes de continuar
+
+
+Além disso, a dona do pet shop deseja calcular, a cada 12 meses, o lucro obtido por banho
+e por cachorro.
+
+# Valores banhos
+# Cachorro Grande Porte = Banho: R$ 75,00 | Custo: R$ 20,00
+# Cachorro Médio Porte = Banho: R$ 60,00 | Custo: R$ 15,00
+# Cachorro Pequeno Porte = Banho: R$ 50,00 | Custo: R$ 5,00
+
+
+# Adições futuras:
+# Perguntar a raça e pedir mais informações sobre o cachorro
+# Adicionar um While para repetir o programa em caso de tamanho inválido.
+# Adicionar biblioteca para definir preços
