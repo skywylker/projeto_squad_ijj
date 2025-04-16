@@ -1,0 +1,50 @@
+# TODO 1 - Filtragem e Transformação de Listas
+# Input: lista de inteiros
+numeros = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+# Etapas:
+# 1. Filtrar: selecionar apenas os números pares.
+#    - Use a função filter() com lambda x: x % 2 == 0
+# 2. Transformar: multiplicar cada número por 2.
+#    - Use a função map() com lambda x: x * 2
+# 3. Ordenar: colocar os resultados em ordem decrescente.
+#    - Use a função sorted(..., reverse=True)
+
+
+# TODO 2 - Filtragem e Transformação de Tuplas
+# Input: tupla com strings e inteiros
+dados = ("maçã", 10, "banana", 5, "laranja", "uva", 20)
+
+# Etapas:
+# 1. Filtrar: remover todos os elementos que são inteiros.
+#    - Use filter() com lambda x: isinstance(x, str)
+# 2. Transformar: converter as strings para maiúsculas.
+#    - Use map() com str.upper
+# 3. Ordenar: colocar as strings em ordem alfabética.
+#    - Use sorted() e depois converter para tupla
+
+
+# TODO 3 - Filtragem e Transformação de Sets
+# Input: conjunto de strings
+palavras = {"banana", "Abacate", "pera", "Amora", "uva", "aveia"}
+
+# Etapas:
+# 1. Filtrar: manter apenas as palavras que começam com "a" ou "A".
+#    - Use filter() com lambda x: x.lower().startswith("a")
+# 2. Transformar: converter todas as palavras para maiúsculas.
+#    - Use map() com str.upper
+# 3. Ordenar: ordenar as palavras e converter para set (se quiser set ordenado, use sorted e mantenha como lista)
+#    - Use sorted() e depois opcionalmente set() para manter a estrutura
+
+
+# TODO 4 - Filtragem e Transformação de Valores de Dicionário
+# Input: dicionário com chaves string e valores diversos
+dicionario = {"a": 10, "b": "banana", "c": "abacaxi", "d": 5, "e": "uva", "f": "melancia"}
+
+# Etapas:
+# 1. Filtrar: selecionar apenas os valores que são strings com mais de 3 caracteres.
+#    - Use filter() com lambda x: isinstance(x, str) and len(x) > 3
+# 2. Transformar: converter todas essas strings para minúsculas.
+#    - Use map() com str.lower
+# 3. Ordenar: ordenar as strings resultantes em ordem alfabética.
+#    - Use sorted()

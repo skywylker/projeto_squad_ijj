@@ -1,16 +1,4 @@
-'''
-A dona de um petshop quer criar um programa para calcular a idade dos cachorros
-de seus clientes em "anos de cachorro". Como os pets envelhecem de maneira diferente
-dos humanos - cada ano humano representa 7 anos de cachorros.
-
->> Desafio: Crie um programa em Py que calcule a idade de cachorro com base na idade humana
-
-O que o programa deve conter:
-- Solicitar ao usuário a idade do pet, em número inteiro.
-- Calcular a idade do pet levando em consideração a idade humana
-'''
-
-import time # Importa a biblioteca time para usar a função sleep
+import time 
 
 print("Olá, seja bem-vindo à calculadora de idade canina da PetMaster!")
 time.sleep(2)
@@ -27,17 +15,6 @@ print(f"A idade do seu pet, em idade humana é de {idadeReal} anos")
 
 
 ################################################ FEATURE ################################################
-
-'''
-Além disso, a dona do pet shop deseja calcular, a cada 12 meses, o lucro obtido por banho
-e por cachorro.
-
-# Valores banhos
-# Cachorro Grande Porte = Banho: R$ 75,00 | Custo: R$ 20,00
-# Cachorro Médio Porte = Banho: R$ 60,00 | Custo: R$ 15,00
-# Cachorro Pequeno Porte = Banho: R$ 50,00 | Custo: R$ 5,00
-
-'''
 
 print("\nAgora vamos calcular o lucro obtido com os banhos por cachorro nos últimos 12 meses.")
 time.sleep(2)
@@ -72,9 +49,10 @@ if precoBanho != 0:
     mensagem = f"{nomeCachorro} tem {idadeReal} anos e o lucro de banho nos últimos 12 meses foi de R$ {lucro:.2f}"
     print(mensagem)
 
-
-
 '''
+
+# Código alternativo com variáveis separadas para cada porte de cachorro: #
+
 
 banhoGrandePorte = 75.00
 custoBanhoGrandePorte = 20.00
@@ -97,6 +75,7 @@ elif tamanhoCachorro == "pequeno":
     print(f"{nomeCachorro} tem {idadeReal} anos e o lucro de banho nos últimos 12 meses foi de R$ {lucro:.2f}")
 else:
     print("Tamanho de cachorro inválido.")
+
 
 '''
 
