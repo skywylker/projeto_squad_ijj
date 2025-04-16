@@ -20,9 +20,6 @@ media = (notaPrimeiroBimestre + notaSegundoBimestre + notaTerceiroBimestre + not
 
 print(f"Olá Caíque! Sua Media é: {media:.2f}")
 
-
-
-'''
 # O if-elif-else é usado para determinar a situação do aluno com base na média #
 # Se a média for maior ou igual a 7, o aluno é aprovado #
 # Se a média for maior ou igual a 6, o aluno é em recuperação #
@@ -35,4 +32,4 @@ elif media == 65:
 else:
     print(f"Media: {media:.2f}. ALUNO REPROVADO!")
 
-'''
+
