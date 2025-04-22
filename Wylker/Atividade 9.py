@@ -1,25 +1,17 @@
-palavras = {"banana", "Abacate", "pera", "Amora", "uva", "aveia", "abacate", "abacaxi", "abacate", "banana", "uva", "pera", "maçã"}
+palavras = {"banana", "aVeLã", "Abacate", "pera", "Amora", "UVA", "aveia"}
 
-def comecaComA(palavra):
-    return palavra.lower().startswith("a")
+def processarStrings(palavras):
+    palavrasComA = []
+    for elemento in palavras:
+        if elemento.lower().startswith("a"):
+            palavrasComA.append(elemento)
 
-def caixaAlta(palavra):
-    return palavra.upper()
+    maiusculas = []
+    for elemento in palavrasComA:
+        maiusculas.append(elemento.upper())
 
-
-# A função filter(comecaComA, palavras) filtra as palavras que começam com a letra "a" (ignorando maiúsculas e minúsculas).
-filtro = filter(comecaComA, palavras)
-
-# A função map(caixaAlta, filtro) transforma as palavras filtradas em letras maiúsculas.
-maiusculas = map(caixaAlta, filtro)
-
-# A função sorted(maiusculas) ordena as palavras em ordem alfabetica.
-ordenado = sorted(maiusculas)
-
-# A função set(ordenado) remove as palavras duplicadas.
-resultado = set(ordenado)
-
-print(resultado)
+    ordenadas = sorted(maiusculas)
+    return set(ordenadas)
 
 
-
+print(processarStrings(palavras))
